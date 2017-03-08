@@ -1,0 +1,62 @@
+lerna(verbose) GitUtilities.isInitialized    ()
+lerna(verbose) GitUtilities.isInitialized    () => true
+lerna(verbose) GitUtilities.getTopLevelDirectory()
+lerna(verbose) GitUtilities.getTopLevelDirectory() => "."
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.readFileSync("./lerna.json") => "{\n  \"lerna\": \"2.0.0-beta.38\",\n  \"packages\": [\n    \"packages/*\"\n  ],\n  \"version\": \"0.0.0\"\n}"
+lerna(verbose) FileSystemUtilities.existsSync("./package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./package.json") => true
+lerna(verbose) FileSystemUtilities.readFileSync("./package.json")
+lerna(verbose) FileSystemUtilities.readFileSync("./package.json") => "{\n  \"name\": \"victory-monorepo\",\n  \"version\": \"0.6.0\",\n  \"description\": \"Shared libraries and components for Victory\",\n  \"repository\": {\n    \"type\": \"git\",\n    \"url\": \"https://github.com/FormidableLabs/victory.git\"\n  },\n  \"author\": \"Vakhtang Sidamonidze\",\n  \"license\": \"MIT\",\n  \"bugs\": {\n    \"url\": \"https://github.com/FormidableLabs/victory/issues\"\n  },\n  \"homepage\": \"https://github.com/FormidableLabs/victory#readme\",\n  \"devDependencies\": {\n    \"lerna\": \"2.0.0-beta.38\"\n  },\n  \"scripts\": {\n    \"bootstrap\": \"lerna bootstrap\"\n  }\n}"
+lerna(info)    Lerna v2.0.0-beta.38
+lerna(verbose) FileSystemUtilities.existsSync("./package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json")
+lerna(verbose) FileSystemUtilities.existsSync("./lerna.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./VERSION")
+lerna(verbose) FileSystemUtilities.existsSync("./VERSION") => false
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-chart-native/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-chart-native/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-core-native/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-core-native/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-core/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-core/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-native-demo/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-native-demo/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-native/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-native/package.json") => true
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-pie-native/package.json")
+lerna(verbose) FileSystemUtilities.existsSync("./packages/victory-pie-native/package.json") => true
+lerna(verbose) Attempting running BootstrapCommand.initialize
+lerna(verbose) Successfully ran BootstrapCommand.initialize
+lerna(verbose) Attempting running BootstrapCommand.execute
+lerna(info)    Bootstrapping 6 packages
+lerna(info)    Preinstalling packages
+lerna(info)    Installing external dependencies
+lerna(verbose) NpmUtilities.installInDir     ("./packages/victory-chart-native", ["babel-core@^6.13.2","babel-eslint@^6.1.2","babel-preset-react-n...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-chart-native/package.json", "./packages/victory-chart-native/package.json.lerna_...)
+lerna(verbose) NpmUtilities.installInDir     ("./packages/victory-core-native", ["babel-core@^6.13.2","babel-eslint@^6.1.2","babel-preset-react-na...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-core-native/package.json", "./packages/victory-core-native/package.json.lerna_ba...)
+lerna(verbose) NpmUtilities.installInDir     ("./packages/victory-native", ["babel-core@^6.13.2","babel-eslint@^6.1.2","babel-preset-react-native@...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-native/package.json", "./packages/victory-native/package.json.lerna_backup")
+lerna(verbose) NpmUtilities.installInDir     ("./packages/victory-pie-native", ["babel-core@^6.13.2","babel-eslint@^6.1.2","babel-preset-react-nat...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-pie-native/package.json", "./packages/victory-pie-native/package.json.lerna_back...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-chart-native/package.json", "./packages/victory-chart-native/package.json.lerna_...) => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-chart-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"bab...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-core-native/package.json", "./packages/victory-core-native/package.json.lerna_ba...) => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-core-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"babe...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-native/package.json", "./packages/victory-native/package.json.lerna_backup") => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"babel-esl...)
+lerna(verbose) FileSystemUtilities.rename    ("./packages/victory-pie-native/package.json", "./packages/victory-pie-native/package.json.lerna_back...) => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-pie-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"babel...)
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-chart-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"bab...) => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-core-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"babe...) => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-pie-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"babel...) => 
+lerna(verbose) FileSystemUtilities.writeFile ("./packages/victory-native/package.json", "{\"dependencies\":{\"babel-core\":\"^6.13.2\",\"babel-esl...) => 
+lerna(verbose) FileSystemUtilities.renameSync("./packages/victory-chart-native/package.json.lerna_backup", "./packages/victory-chart-native/packag...)
+lerna(verbose) FileSystemUtilities.renameSync("./packages/victory-chart-native/package.json.lerna_backup", "./packages/victory-chart-native/packag...) => 
+lerna(error)   NpmUtilities.installInDir     ("./packages/victory-chart-native", ["babel-core@^6.13.2","babel-eslint@^6.1.2","babel-preset-react-n...)
+    Command exited with status 1: npm install
+lerna(error)   Errored while running BootstrapCommand.execute
